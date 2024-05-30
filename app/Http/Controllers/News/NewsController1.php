@@ -34,7 +34,7 @@ class NewsController1 extends Controller
     public function index()
     {
         $data['getRecord'] = Blogsco::paginate(9); 
-        dd($data['getRecord']);
+        // dd($data['getRecord']);
         return view('news.index', $data);
     }
     
